@@ -1,0 +1,31 @@
+:root {
+    --primary-gold: #f5b016;
+    --primary-gold-hover: #d4960c;
+    --dark-bg: #0b0c10;
+    --dark-card: #111215;
+    --light-bg: #f9f9f9;
+    --text-dark: #1c1c1e;
+    --text-muted: #666666;
+    --text-light: #ffffff;
+    --border-color: #e5e5e5;
+    --font-main: 'Poppins', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-main); background-color: var(--dark-bg); color: var(--text-light); }
+header { background-color: #000; display: flex; justify-content: space-between; padding: 20px 5%; align-items: center; border-bottom: 1px solid var(--primary-gold); }
+.logo h2 { color: #fff; } .logo span { color: var(--primary-gold); }
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav a { color: #fff; text-decoration: none; } .call-btn { background: var(--primary-gold); padding: 10px 20px; color: #000; font-weight: bold; text-decoration: none; border-radius: 5px; }
+.hero { height: 60vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1470') center/cover; display: flex; align-items: center; justify-content: center; text-align: center; }
+.hero h1 { font-size: 3rem; margin-bottom: 10px; } .hero h2 { color: var(--primary-gold); border: 2px solid var(--primary-gold); padding: 5px 20px; display: inline-block; margin: 15px 0; }
+#services, #prices, #team, #contact { padding: 60px 5%; text-align: center; }
+.services-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
+.service-card { background: var(--dark-card); padding: 30px; border-radius: 8px; border: 1px solid #222; width: 220px; }
+.service-card h3 { margin-bottom: 10px; } .price { color: var(--primary-gold); font-size: 1.5rem; font-weight: bold; }
+table { width: 100%; max-width: 600px; margin: 30px auto; border-collapse: collapse; }
+td { padding: 12px; border-bottom: 1px solid #222; text-align: left; }
+td:last-child { text-align: right; color: var(--primary-gold); font-weight: bold; }
+.team { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
+.member { background: var(--dark-card); padding: 20px; border-radius: 8px; width: 200px; border-top: 3px solid var(--primary-gold); }
+footer { background: #000; text-align: center; padding: 20px; color: #555; font-size: 0.9rem; }
