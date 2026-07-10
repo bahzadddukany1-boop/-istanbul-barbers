@@ -254,9 +254,11 @@ transform:scale(1.05);
 }
 
 .member h3{
-color:#FFD700;
-margin-bottom:10px;
-font-size:28px;/* ===========================
+    color:#FFD700;
+    margin-bottom:10px;
+    font-size:28px;
+}
+/* ===========================
    GALLERY
 =========================== */
 
