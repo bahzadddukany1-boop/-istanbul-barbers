@@ -66,9 +66,9 @@ nav a:hover {
     color: #0b0b0b;
 }
 
-/* Hero Section - Fixed with .jpg.JPG extension */
+/* Hero Section - Fixed with Online Image */
 .hero {
-    background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(11, 11, 11, 0.85)), url('gallery3.jpg.JPG') no-repeat center center/cover;
+    background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(11, 11, 11, 0.85)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -202,9 +202,9 @@ section h2::after {
     font-weight: 700;
 }
 
-/* Loyalty Section - Fixed with .jpg.JPG extension */
+/* Loyalty Section - Fixed with Online Image */
 .loyalty {
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('gallery1.jpg.JPG') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200') no-repeat center center/cover;
     padding: 80px 20px;
     border-top: 1px solid rgba(223, 186, 115, 0.1);
     border-bottom: 1px solid rgba(223, 186, 115, 0.1);
