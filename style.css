@@ -65,6 +65,7 @@ nav a:hover {
     background-color: #dfba73;
     color: #0b0b0b;
 }
+background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(11, 11, 11, 0.85)), url('PASTE_HERO_BACKGROUND_LINK_HERE') no-repeat center center/cover;
 
 /* Hero Section - Fixed with Online Image */
 .hero {
@@ -165,7 +166,8 @@ section h2::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+}background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('PASTE_LOYALTY_BACKGROUND_LINK_HERE') no-repeat center center/cover;
+
 
 .card i {
     font-size: 2rem;
