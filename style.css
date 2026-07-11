@@ -359,3 +359,8 @@ footer {
 .hours-contact-container { padding: 60px 8%; background: var(--bg-card); border-top: 1px solid var(--border-color); }
 .two-column-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; }
 .hours-list p { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #1f1f1f; color: var(--text-muted); }
+.hero {
+    background: linear-gradient(rgba(11, 11, 11, 0.7), rgba(11, 11, 11, 0.85)), 
+                url('gallery5.jpg.JPG') no-repeat center center/cover !important;
+}
+
