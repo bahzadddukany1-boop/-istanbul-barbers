@@ -39,15 +39,32 @@ nav a:hover { color: #dfba73; }
 @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 @keyframes scrollRight { 0% { transform: translateX(-50%); } 100% { transform: translateX(0); } }
 
-/* Team & Contact */
-.team, .contact { background-color: #0f0f0f; padding: 90px 10%; text-align: center; }
-.team-grid { display: flex; justify-content: center; gap: 30px; }
-.member { background: #161616; padding: 30px; border-radius: 8px; width: 260px; }
-.contact-info { margin-bottom: 15px; }
-.social-links { margin: 25px 0; display: flex; justify-content: center; gap: 15px; }
-.social-btn { color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 4px; }
-.fb { background-color: #1877f2; }
-.tt { background-color: #000; border: 1px solid #fff; }
+/* Team Section Fix */
+.team { 
+    background-color: #0f0f0f; 
+    padding: 60px 20px; 
+    text-align: center; 
+}
+
+.team-grid { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 30px;
+}
+
+.member { 
+    background: #161616; 
+    padding: 30px; 
+    border-radius: 8px; 
+    width: 260px; 
+    border: 1px solid rgba(223, 186, 115, 0.1);
+}
+
+.member h3 { color: #fff; margin-bottom: 5px; }
+.member p { color: #dfba73; }
+
 
 /* Responsive */
 @media (max-width: 768px) {
