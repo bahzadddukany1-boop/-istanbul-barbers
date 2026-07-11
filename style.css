@@ -491,3 +491,47 @@ margin:10px 0;
 .gallery-grid img:hover{
     transform:scale(1.05);
 }
+.walkin-box{
+    display:inline-block;
+    background:#FFD700;
+    color:#000;
+    padding:18px 35px;
+    border-radius:12px;
+    margin-top:20px;
+    text-align:center;
+    font-weight:700;
+}
+
+.walkin-box h2{
+    margin:0;
+    color:#000;
+    font-size:28px;
+}
+
+.walkin-box p{
+    margin-top:8px;
+    font-size:20px;
+    font-weight:bold;
+}
+.walkin-box{
+    background:#FFD700;
+    color:#000;
+    padding:20px;
+    border-radius:15px;
+    display:inline-block;
+    margin:30px 0;
+    box-shadow:0 5px 20px rgba(255,215,0,.4);
+}
+
+.walkin-box h2{
+    color:#000;
+    margin:0;
+    font-size:30px;
+    font-weight:700;
+}
+
+.walkin-box p{
+    margin-top:8px;
+    font-size:22px;
+    font-weight:600;
+}
