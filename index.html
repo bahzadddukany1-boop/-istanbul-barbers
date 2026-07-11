@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Istanbul Barbers | Derby</title>
-    <meta name="description" content="Professional Barber Shop in Chellaston, Derby. No Appointment Needed - Just Walk In.">
-   <link rel="stylesheet" href="style.css?v=5">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-</head>
-<body>
-
-    <header>
-        <div class="logo">
-            <h2>ISTANBUL <span>BARBERS</span></h2>
-        </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <a class="call" href="tel:07429928263">
-            <i class="fa-solid fa-phone"></i> Call Now
-        </a>
-    </header>
-
-    <section id="home" style="position: relative; height: 100vh; min-height: 500px; display: flex; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(11, 11, 11, 0.6), rgba(11, 11, 11, 0.85)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200') no-repeat center center/cover;">
-        <div class="hero-text">
-            <h1>Premium Barber Shop</h1>
-            <h2>NO APPOINTMENT NEEDED</h2>
-            <p>JUST WALK IN</p>
-            <a href="#services" class="btn">View Prices</a>
-        </div>
-    </section>
-
+    <!-- SERVICES SECTION -->
     <section id="services" class="services">
         <h2>Our Services & Prices</h2>
         <div class="cards">
@@ -71,19 +34,17 @@
             </div>
         </div>
     </section>
-        <!-- LOYALTY CARD SECTION -->
-    <section class="loyalty">
-        <h2>Loyalty Card</h2>
+
+    <!-- LOYALTY CARD SECTION -->
+    <section class="loyalty" style="background-color: #0f0f0f; padding: 40px 10%; text-align: center;">
+        <h2 style="color: #dfba73; margin-bottom: 15px;">Loyalty Card</h2>
         <p style="font-size: 1.5rem; color: #fff; margin-bottom: 10px;">Collect 6 stamps and receive your next haircut <span style="color: #dfba73; font-weight: bold;">FREE!</span></p>
         <p style="color: #a0a0a0; margin-bottom: 25px;">Ask for your card in-shop today.</p>
-        <a href="tel:07429928263" class="btn">Call Now</a>
     </section>
 
-        <!-- MOVING GALLERY SECTION -->
+    <!-- GALLERY SECTION -->
     <section id="gallery" class="gallery">
         <h2>Our Work & Gallery</h2>
-        
-        <!-- Row 1: Moving Left -->
         <div class="marquee-container">
             <div class="marquee-track track-left">
                 <img src="https://i.postimg.cc/NKFXZmtC/Full-Size-Render.jpg" alt="Barber 1">
@@ -93,7 +54,6 @@
                 <img src="https://i.postimg.cc/75hzj04Z/IMG-0151.jpg" alt="Barber 5">
                 <img src="https://i.postimg.cc/jD2fBPTj/IMG-0154.jpg" alt="Barber 6">
                 <img src="https://i.postimg.cc/75hzj04h/IMG-0220.jpg" alt="Barber 7">
-                <!-- Duplicate for seamless scroll -->
                 <img src="https://i.postimg.cc/NKFXZmtC/Full-Size-Render.jpg" alt="Barber 1">
                 <img src="https://i.postimg.cc/MvdRstC8/IMG-0049.jpg" alt="Barber 2">
                 <img src="https://i.postimg.cc/qzjnmQPk/IMG-0063.jpg" alt="Barber 3">
@@ -103,8 +63,6 @@
                 <img src="https://i.postimg.cc/75hzj04h/IMG-0220.jpg" alt="Barber 7">
             </div>
         </div>
-
-        <!-- Row 2: Moving Right -->
         <div class="marquee-container">
             <div class="marquee-track track-right">
                 <img src="https://i.postimg.cc/K1jTCBb4/IMG-0250.jpg" alt="Barber 8">
@@ -114,7 +72,6 @@
                 <img src="https://i.postimg.cc/hXvmNTnp/IMG-0686.jpg" alt="Barber 12">
                 <img src="https://i.postimg.cc/VJvt2nw0/IMG-1023.jpg" alt="Barber 13">
                 <img src="https://i.postimg.cc/4mBt8wDm/IMG-1043.jpg" alt="Barber 14">
-                <!-- Duplicate for seamless scroll -->
                 <img src="https://i.postimg.cc/K1jTCBb4/IMG-0250.jpg" alt="Barber 8">
                 <img src="https://i.postimg.cc/SnR9HC4n/IMG-0626.jpg" alt="Barber 9">
                 <img src="https://i.postimg.cc/CR589k0Z/IMG-0633.jpg" alt="Barber 10">
@@ -125,50 +82,3 @@
             </div>
         </div>
     </section>
-
-    <section id="team" class="team">
-        <h2>Meet Our Team</h2>
-        <div class="team-grid">
-            <div class="member">
-                <i class="fa-solid fa-user-tie" style="font-size: 2.5rem; color: #dfba73; margin-bottom: 15px; display: block;"></i>
-                <h3>Sarhad</h3>
-                <p>Senior Barber</p>
-            </div>
-            <div class="member">
-                <i class="fa-solid fa-user-tie" style="font-size: 2.5rem; color: #dfba73; margin-bottom: 15px; display: block;"></i>
-                <h3>Bahzad</h3>
-                <p>Professional Barber</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="hours">
-        <h2>Opening Hours</h2>
-        <div class="hours-container">
-            <div class="hour-row">
-                <span>Monday - Saturday</span>
-                <span>09:00 AM - 06:30 PM</span>
-            </div>
-            <div class="hour-row">
-                <span>Sunday</span>
-                <span>10:00 AM - 04:30 PM</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p class="contact-info">📞 07429 928263</p>
-        <p class="contact-info">📍 Unit 2, Royal Glen Park, Chellaston, Derby DE73 5XE</p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/share/1HfqLWmkrf/?mibextid=wwXIfr" target="_blank" class="social-btn fb"><i class="fa-brands fa-facebook"></i> Facebook</a>
-            <a href="https://www.tiktok.com/@istanbulbarber94?_r=1&_t=ZN-97swsNXQ7fj" target="_blank" class="social-btn tt"><i class="fa-brands fa-tiktok"></i> TikTok</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Istanbul Barbers. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
