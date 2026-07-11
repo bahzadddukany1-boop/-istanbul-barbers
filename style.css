@@ -66,9 +66,9 @@ nav a:hover {
     color: #0b0b0b;
 }
 
-/* Hero Section - Fixed with your real shop interior image */
+/* Hero Section - Fixed with your real gorgeous shop interior image */
 .hero {
-    background: linear-gradient(rgba(11, 11, 11, 0.4), rgba(11, 11, 11, 0.8)), url('https://i.postimg.cc/zHhh3jyk/Full-Size-Render.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(11, 11, 11, 0.4), rgba(11, 11, 11, 0.8)), url('https://i.postimg.cc/NKFXZmtC/Full-Size-Render.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -202,9 +202,9 @@ section h2::after {
     font-weight: 700;
 }
 
-/* Loyalty Section - Fixed with your real work image */
+/* Loyalty Section - Fixed with another great shop view */
 .loyalty {
-    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://i.postimg.cc/2LWW3w10/IMG-2976.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://i.postimg.cc/LJWPS54k/IMG-2976.jpg') no-repeat center center/cover;
     padding: 80px 20px;
     border-top: 1px solid rgba(223, 186, 115, 0.1);
     border-bottom: 1px solid rgba(223, 186, 115, 0.1);
