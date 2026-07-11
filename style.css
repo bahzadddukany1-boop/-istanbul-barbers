@@ -66,10 +66,13 @@ nav a:hover {
     color: #0b0b0b;
 }
 
-/* Hero Section - Fixed with your real gorgeous shop interior image */
+/* Hero Section - Fixed & Optimized */
 .hero {
-    background: linear-gradient(rgba(11, 11, 11, 0.4), rgba(11, 11, 11, 0.8)), url('https://i.postimg.cc/NKFXZmtC/Full-Size-Render.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(11, 11, 11, 0.55), rgba(11, 11, 11, 0.85)), 
+                url('https://i.postimg.cc/NKFXZmtC/Full-Size-Render.jpg') no-repeat center center/cover;
+    background-color: #0f0f0f; /* جێگرەوەی ڕەش بۆ کاتی لۆد بوون */
     height: 100vh;
+    min-height: 600px; /* ڕێگری دەکات لە بچووکبوونەوەی زۆر لەسەر شاشەی کۆمپیوتەر */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,7 +205,7 @@ section h2::after {
     font-weight: 700;
 }
 
-/* Loyalty Section - Fixed with another great shop view */
+/* Loyalty Section */
 .loyalty {
     background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://i.postimg.cc/LJWPS54k/IMG-2976.jpg') no-repeat center center/cover;
     padding: 80px 20px;
@@ -358,7 +361,7 @@ footer {
     border-top: 1px solid #111;
 }
 
-/* Responsive Menu Adjustments for Mobile */
+/* Responsive Menu Adjustments for Mobile - FIXED */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -376,10 +379,18 @@ footer {
         margin: 0 5px;
     }
     .hero {
-        height: auto;
-        padding: 120px 20px 60px 20px;
+        height: 75vh; /* لە جیاتی auto ئێستا بەرزییەکی جێگیری هەیە لە مۆبایلدا */
+        min-height: 480px; /* ڕێگا نادات وێنەکە ون ببێت */
+        padding: 40px 20px;
     }
     .hero-text h1 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
+    }
+    .hero-text h2 {
+        font-size: 1.3rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 20px;
     }
 }
