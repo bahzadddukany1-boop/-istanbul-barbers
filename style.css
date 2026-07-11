@@ -192,7 +192,7 @@ section h2::after {
     box-shadow: 0 10px 25px rgba(223, 186, 115, 0.1);
 }
 
-/* Featured Cards (ئەوانەی تاشین و ڕیش پێکەوەن) */
+/* Featured Cards */
 .card.featured {
     background: linear-gradient(145deg, #1a1610, #161616);
     border: 1px solid rgba(223, 186, 115, 0.3);
