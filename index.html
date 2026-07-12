@@ -3,201 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Istanbul Barbers | Derby</title>
-    <meta name="description" content="Professional Barber Shop in Chellaston, Derby. No Appointment Needed - Just Walk In.">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Istanbul Barber - Premium Grooming</title>
+    <style>
+        :root { --gold: #c5a059; --bg: #0a0a0a; --card: #141414; --white: #ffffff; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: var(--bg); color: var(--white); margin: 0; }
+        
+        /* Nav */
+        nav { display: flex; justify-content: space-between; padding: 20px 50px; background: #000; border-bottom: 1px solid #333; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
+        .btn-walk { background: var(--gold); padding: 10px 20px; border-radius: 5px; color: black; font-weight: bold; text-decoration: none; }
+
+        /* Hero */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200'); background-size: cover; }
+        .hero h1 { color: var(--gold); font-size: 4rem; margin: 0; }
+        .hero-info { margin-top: 20px; display: flex; gap: 30px; font-size: 0.9rem; }
+
+        /* Sections */
+        .container { max-width: 1100px; margin: auto; padding: 50px 20px; }
+        h2 { color: var(--gold); text-align: center; font-size: 2.5rem; text-transform: uppercase; }
+
+        /* Services */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card); padding: 30px; border: 1px solid #333; text-align: center; }
+        .card h3 { color: var(--gold); }
+
+        /* Gallery */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+        .gallery img { width: 100%; height: 250px; object-fit: cover; }
+
+        /* About & Contact */
+        .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        
+        /* Reviews */
+        .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
+        .review-card { background: #1a1a1a; padding: 20px; border-radius: 5px; }
+
+        footer { background: #000; padding: 50px; text-align: center; border-top: 2px solid var(--gold); }
+    </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <h2>ISTANBUL <span>BARBERS</span></h2>
+<nav>
+    <div style="font-weight:bold; font-size: 1.5rem;">ISTANBUL <span style="color:var(--gold)">BARBER</span></div>
+    <div class="nav-links">
+        <a href="#">HOME</a> <a href="#">SERVICES</a> <a href="#">GALLERY</a> <a href="#">CONTACT</a>
+        <a href="#" class="btn-walk">WALK IN</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>ISTANBUL BARBER</h1>
+    <p>Look Sharp. Feel Confident.</p>
+    <div class="hero-info">
+        <span>📍 Unit 2, Royal Glen Park, Chellaston, Derby DE73 5XE</span>
+        <span>⭐ 5 Star Rated on Google</span>
+    </div>
+</section>
+
+<div class="container">
+    <h2>OUR SERVICES</h2>
+    <div class="services-grid">
+        <div class="card"><h3>Haircut</h3><p>£13</p></div>
+        <div class="card"><h3>Skin Fade</h3><p>£15</p></div>
+        <div class="card"><h3>Beard Trim</h3><p>£12</p></div>
+        <div class="card"><h3>Hot Towel Shave</h3><p>£12</p></div>
+    </div>
+
+    <h2>GALLERY</h2>
+    <div class="gallery">
+        <img src="https://i.postimg.cc/NKFXZmtC/Full-Size-Render.jpg" alt="Barber">
+        <img src="https://i.postimg.cc/MvdRstC8/IMG-0049.jpg" alt="Barber">
+        <img src="https://i.postimg.cc/qzjnmQPk/IMG-0063.jpg" alt="Barber">
+        <img src="https://i.postimg.cc/DS0GRLhf/IMG-0137.jpg" alt="Barber">
+    </div>
+
+    <div class="split">
+        <div>
+            <h2>ABOUT US</h2>
+            <p>At Istanbul Barber, we believe every client deserves the best. Our experienced barbers are dedicated to providing top quality services in a friendly and relaxed environment.</p>
         </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <a class="call" href="tel:07429928263">
-            <i class="fa-solid fa-phone"></i> Call Now
-        </a>
-    </header>
-
-    <section class="hero" id="home">
-        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1200" alt="Istanbul Barbers Interior" class="hero-bg">
-        <div class="hero-text">
-            <h1>Premium Barber Shop</h1>
-            <h2>NO APPOINTMENT NEEDED</h2>
-            <p>JUST WALK IN</p>
-            <a href="#services" class="btn">View Prices</a>
+        <div>
+            <h2>CONTACT US</h2>
+            <p>📞 07429 928263</p>
+            <p>Mon - Sat: 09:00 AM - 06:30 PM</p>
         </div>
-    </section>
+    </div>
 
-    <section id="services" class="services">
-        <h2>Our Services & Prices</h2>
-        <div class="cards">
-            <div class="card">
-                <i class="fa-solid fa-scissors"></i>
-                <h3>Haircut</h3>
-                <h4>£13</h4>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-scissors"></i>
-                <h3>Skin Fade</h3>
-                <h4>£15</h4>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-user"></i>
-                <h3>Senior Citizens</h3>
-                <h4>£10</h4>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-user"></i>
-                <h3>Beard Trim</h3>
-                <h4>£12</h4>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-fire"></i>
-                <h3>Turkish Hot Towel Shave</h3>
-                <h4>£12</h4>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-child"></i>
-                <h3>Kids Haircut (Under 12)</h3>
-                <h4>£10</h4>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-child"></i>
-                <h3>Kids Skin Fade (Under 12)</h3>
-                <h4>£13</h4>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-scissors"></i>
-                <h3>One Grade All Over</h3>
-                <h4>£9</h4>
-            </div>
-            <div class="card featured">
-                <i class="fa-solid fa-star"></i>
-                <h3>Haircut & Beard Trim (Hot Towel)</h3>
-                <h4>£23</h4>
-            </div>
-            <div class="card featured">
-                <i class="fa-solid fa-crown"></i>
-                <h3>Skin Fade & Beard Trim (Hot Towel)</h3>
-                <h4>£25</h4>
-            </div>
-        </div>
-    </section>
+    <h2>REVIEWS</h2>
+    <div class="reviews">
+        <div class="review-card">⭐⭐⭐⭐⭐ <br> "Best barber in Derby! Friendly staff and amazing service."</div>
+        <div class="review-card">⭐⭐⭐⭐⭐ <br> "Always leave the shop feeling fresh and confident."</div>
+        <div class="review-card">⭐⭐⭐⭐⭐ <br> "Great atmosphere and top quality haircuts."</div>
+    </div>
+</div>
 
-    <section class="loyalty">
-        <h2>Loyalty Card</h2>
-        <p>Collect 6 stamps and receive your next haircut FREE.</p>
-        <a href="tel:07429928263" class="btn">Call Now</a>
-    </section>
+<footer>
+    <p>© 2026 Istanbul Barber. All Rights Reserved.</p>
+</footer>
 
-      <!-- MOVING GALLERY SECTION -->
-    <section id="gallery" class="gallery">
-        <h2>Our Work & Gallery</h2>
-        
-        <!-- Row 1: Moving Left -->
-        <div class="marquee-container">
-            <div class="marquee-track track-left">
-                <img src="https://i.postimg.cc/NKFXZmtC/Full-Size-Render.jpg" alt="Barber 1">
-                <img src="https://i.postimg.cc/MvdRstC8/IMG-0049.jpg" alt="Barber 2">
-                <img src="https://i.postimg.cc/qzjnmQPk/IMG-0063.jpg" alt="Barber 3">
-                <img src="https://i.postimg.cc/DS0GRLhf/IMG-0137.jpg" alt="Barber 4">
-                <img src="https://i.postimg.cc/75hzj04Z/IMG-0151.jpg" alt="Barber 5">
-                <img src="https://i.postimg.cc/jD2fBPTj/IMG-0154.jpg" alt="Barber 6">
-                <img src="https://i.postimg.cc/75hzj04h/IMG-0220.jpg" alt="Barber 7">
-                <!-- Duplicate for seamless scroll -->
-                <img src="https://i.postimg.cc/NKFXZmtC/Full-Size-Render.jpg" alt="Barber 1">
-                <img src="https://i.postimg.cc/MvdRstC8/IMG-0049.jpg" alt="Barber 2">
-                <img src="https://i.postimg.cc/qzjnmQPk/IMG-0063.jpg" alt="Barber 3">
-                <img src="https://i.postimg.cc/DS0GRLhf/IMG-0137.jpg" alt="Barber 4">
-                <img src="https://i.postimg.cc/75hzj04Z/IMG-0151.jpg" alt="Barber 5">
-                <img src="https://i.postimg.cc/jD2fBPTj/IMG-0154.jpg" alt="Barber 6">
-                <img src="https://i.postimg.cc/75hzj04h/IMG-0220.jpg" alt="Barber 7">
-            </div>
-        </div>
-
-        <!-- Row 2: Moving Right -->
-        <div class="marquee-container">
-            <div class="marquee-track track-right">
-                <img src="https://i.postimg.cc/K1jTCBb4/IMG-0250.jpg" alt="Barber 8">
-                <img src="https://i.postimg.cc/SnR9HC4n/IMG-0626.jpg" alt="Barber 9">
-                <img src="https://i.postimg.cc/CR589k0Z/IMG-0633.jpg" alt="Barber 10">
-                <img src="https://i.postimg.cc/Yv0FTY7h/IMG-0640.jpg" alt="Barber 11">
-                <img src="https://i.postimg.cc/hXvmNTnp/IMG-0686.jpg" alt="Barber 12">
-                <img src="https://i.postimg.cc/VJvt2nw0/IMG-1023.jpg" alt="Barber 13">
-                <img src="https://i.postimg.cc/4mBt8wDm/IMG-1043.jpg" alt="Barber 14">
-                <!-- Duplicate for seamless scroll -->
-                <img src="https://i.postimg.cc/K1jTCBb4/IMG-0250.jpg" alt="Barber 8">
-                <img src="https://i.postimg.cc/SnR9HC4n/IMG-0626.jpg" alt="Barber 9">
-                <img src="https://i.postimg.cc/CR589k0Z/IMG-0633.jpg" alt="Barber 10">
-                <img src="https://i.postimg.cc/Yv0FTY7h/IMG-0640.jpg" alt="Barber 11">
-                <img src="https://i.postimg.cc/hXvmNTnp/IMG-0686.jpg" alt="Barber 12">
-                <img src="https://i.postimg.cc/VJvt2nw0/IMG-1023.jpg" alt="Barber 13">
-                <img src="https://i.postimg.cc/4mBt8wDm/IMG-1043.jpg" alt="Barber 14">
-            </div>
-        </div>
-    </section>
-
-    <section id="team" class="team">
-        <h2>Meet Our Team</h2>
-        <div class="team-grid">
-            <div class="member">
-                <i class="fa-solid fa-user-tie" style="font-size: 2.5rem; color: #dfba73; margin-bottom: 15px; display: block;"></i>
-                <h3>Sarhad</h3>
-                <p>Senior Barber</p>
-            </div>
-            <div class="member">
-                <i class="fa-solid fa-user-tie" style="font-size: 2.5rem; color: #dfba73; margin-bottom: 15px; display: block;"></i>
-                <h3>Bahzad</h3>
-                <p>Professional Barber</p>
-            </div>
-            <div class="member">
-                <i class="fa-solid fa-user-tie" style="font-size: 2.5rem; color: #dfba73; margin-bottom: 15px; display: block;"></i>
-                <h3>Hazhar</h3>
-                <p>Professional Barber</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="hours">
-        <h2>Opening Hours</h2>
-        <div class="hours-container">
-            <div class="hour-row">
-                <span>Monday - Saturday</span>
-                <span>09:00 AM - 06:30 PM</span>
-            </div>
-            <div class="hour-row">
-                <span>Sunday</span>
-                <span>10:00 AM - 04:30 PM</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p class="contact-info">📞 07429 928263</p>
-        <p class="contact-info">📍 Unit 2, Royal Glen Park, Chellaston, Derby DE73 5XE</p>
-        <div class="social-links">
-            <a href="https://www.facebook.com/share/1HfqLWmkrf/?mibextid=wwXIfr" target="_blank" class="social-btn fb"><i class="fa-brands fa-facebook"></i> Facebook</a>
-            <a href="https://www.tiktok.com/@istanbulbarber94?_r=1&_t=ZN-97swsNXQ7fj" target="_blank" class="social-btn tt"><i class="fa-brands fa-tiktok"></i> TikTok</a>
-        </div>
-        <p style="margin-top: 25px;">
-            <a class="btn" href="https://maps.app.goo.gl/EmcsAdHsv8gG1CDE6?g_st=ic" target="_blank">Get Directions</a>
-        </p>
-    </section>
-
-    <footer>
-        <p>© 2026 Istanbul Barbers. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
