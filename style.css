@@ -48,3 +48,329 @@ nav a:hover { color: #dfba73; }
     .hero h1 { font-size: 2rem; }
     nav { display: none; } /* Simplified for mobile */
 }
+/* ===== SECTIONS ===== */
+
+.services,
+.team,
+.hours,
+.contact,
+.loyalty,
+.gallery{
+    padding:90px 6%;
+    text-align:center;
+}
+
+.services h2,
+.team h2,
+.hours h2,
+.contact h2,
+.gallery h2,
+.loyalty h2{
+    font-size:38px;
+    margin-bottom:40px;
+    color:#dfba73;
+}
+
+
+/* ===== SERVICES CARDS ===== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:linear-gradient(145deg,#181818,#0e0e0e);
+    padding:35px 25px;
+    border-radius:20px;
+    border:1px solid rgba(223,186,115,.25);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#dfba73;
+    box-shadow:0 15px 40px rgba(223,186,115,.2);
+}
+
+.card i{
+    font-size:35px;
+    color:#dfba73;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.card h4{
+    color:#dfba73;
+    font-size:25px;
+}
+
+.featured{
+    border:2px solid #dfba73;
+}
+
+
+/* ===== LOYALTY ===== */
+
+.loyalty{
+    background:
+    linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1621605815971-fbc98d665033")
+    center/cover;
+}
+
+.loyalty p{
+    font-size:18px;
+}
+
+
+/* ===== GALLERY ===== */
+
+.gallery{
+    overflow:hidden;
+}
+
+.marquee-container{
+    overflow:hidden;
+    margin:25px 0;
+}
+
+.marquee-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation:moveLeft 35s linear infinite;
+}
+
+.track-right{
+    animation:moveRight 35s linear infinite;
+}
+
+.marquee-track img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    border:2px solid #dfba73;
+    transition:.3s;
+}
+
+.marquee-track img:hover{
+    transform:scale(1.05);
+}
+
+
+@keyframes moveLeft{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+
+@keyframes moveRight{
+    from{
+        transform:translateX(-50%);
+    }
+    to{
+        transform:translateX(0);
+    }
+}
+
+
+/* ===== TEAM ===== */
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.member{
+    background:#151515;
+    padding:35px;
+    border-radius:20px;
+    border:1px solid rgba(223,186,115,.3);
+    transition:.3s;
+}
+
+.member:hover{
+    transform:translateY(-8px);
+}
+
+.member i{
+    color:#dfba73 !important;
+}
+
+.member h3{
+    font-size:24px;
+    color:#dfba73;
+}
+/* ===== OPENING HOURS ===== */
+
+.hours{
+    background:#111;
+}
+
+.hours-container{
+    max-width:500px;
+    margin:auto;
+    background:#181818;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(223,186,115,.3);
+}
+
+.hour-row{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0;
+    border-bottom:1px solid #333;
+    font-size:16px;
+}
+
+.hour-row:last-child{
+    border-bottom:none;
+}
+
+
+/* ===== CONTACT ===== */
+
+.contact-info{
+    font-size:18px;
+    margin:15px 0;
+}
+
+
+.social-links{
+    margin-top:30px;
+}
+
+
+.social-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 25px;
+    margin:8px;
+    border-radius:30px;
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #dfba73;
+    transition:.3s;
+}
+
+.social-btn:hover{
+    background:#dfba73;
+    color:#000;
+}
+
+
+.fb i,
+.tt i{
+    font-size:20px;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer{
+    background:#050505;
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(223,186,115,.3);
+    color:#aaa;
+}
+
+
+/* ===== SCROLL ANIMATION ===== */
+
+.hidden{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+    header{
+        padding:15px 5%;
+    }
+
+    .logo h2{
+        font-size:18px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .call{
+        padding:10px 15px;
+        font-size:14px;
+    }
+
+
+    .hero{
+        height:75vh;
+    }
+
+
+    .hero h1{
+        font-size:35px;
+    }
+
+
+    .hero h2{
+        font-size:20px;
+    }
+
+
+    .hero p{
+        font-size:15px;
+    }
+
+
+    .services h2,
+    .team h2,
+    .hours h2,
+    .contact h2,
+    .gallery h2,
+    .loyalty h2{
+        font-size:28px;
+    }
+
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+
+    .marquee-track img{
+        width:190px;
+        height:190px;
+    }
+
+
+    .hour-row{
+        flex-direction:column;
+        gap:5px;
+        text-align:center;
+    }
+
+}
